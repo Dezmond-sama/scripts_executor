@@ -1,2 +1,1 @@
-# scripts_executor
-scripts_executor
+# Simple Flask server to execute python scripts.
