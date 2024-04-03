@@ -15,10 +15,10 @@ def run_script():
         with redirect_stdout(stdout):
             exec(script, {'__name__':'__main__'})
         out = stdout.getvalue()
-        return {"res":out}
+        return {"res":out}, 200
     except Exception as e:
         print(e)
-        return {"error": str(e)}    
+        return {"error": str(e)}, 400
     
     
 def create_app():
